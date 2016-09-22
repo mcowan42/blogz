@@ -23,8 +23,20 @@ indexes:
 
 - kind: Post
   properties:
+  - name: author.username=
+  - name: created
+    direction: desc
+
+- kind: Post
+  properties:
   - name: author=
   - name: created
+
+- kind: Post
+  properties:
+  - name: author=
+  - name: created
+    direction: desc
 
 - kind: Post
   properties:
@@ -35,3 +47,9 @@ indexes:
   properties:
   - name: user=
   - name: created
+
+- kind: Post
+  properties:
+  - name: username=
+  - name: created
+    direction: desc
